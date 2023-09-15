@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" media="screen" href="https://ticketing-assets.ticketplus.global/assets/ticketing/application-d22f56bc7755792a2f1ddd62d870913d2a4b7a00f3b9a7ec21580a4b763d9d9e.css" data-turbolinks-track="reload" />
+<script src="https://ticketing-assets.ticketplus.global/assets/ticketing/application-f97fdfd2174207b7b3f831c944bcf46cb3bca3212519f7e7add0cde61c0bc1e9.js" data-turbolinks-track="reload"></script>
+<meta name="csrf-param" content="authenticity_key" /><meta name="csrf-token" content="uUq0RBukYPUGyT7pALn7lAGA1oCbOhmFG4VNPywQ3AJ/cHAa5UhswWgE/n0n0cmm9PWYY+3eRQqdZvNz77e+ag==" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<script src="assets/decidir.js"></script>
+<link rel="icon" type="image/png" href="https://s3-sa-east-1.amazonaws.com/eb-core-livepass-com-ar-uploads/customization/logo-round.png" sizes="32x32">
+<meta name="apple-mobile-web-app-title" content="Livepass">
+<meta name="application-name" content="Livepass">
+<meta name="msapplication-TileColor" content="#f44336">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+
+</head>
+<body>
+
+<div class="flashes-container">
+<div class="flash-type-info alert alert-info alert-dismissible m-b-0" style="display:none" role="alert">
+<span class="flash-messege"></span>
+</div>
+<div class="flash-type-notice alert alert-info alert-dismissible m-b-0" style="display:none" role="alert">
+<span class="flash-messege"></span>
+</div>
+<div class="flash-type-alert alert alert-warning alert-dismissible m-b-0" style="display:none" role="alert">
+<span class="flash-messege"></span>
+</div>
+<div class="flash-type-error alert alert-danger alert-dismissible m-b-0" style="display:none" role="alert">
+<span class="flash-messege"></span>
+</div>
+<div class="flash-type-success alert alert-success alert-dismissible m-b-0" style="display:none" role="alert">
+<span class="flash-messege"></span>
+</div>
+</div>
+<div class="iframe-parent">
+<div class="div-expand-fixed">
+<div class="row">
+<div class="col-md-12 col-sm-12 p-a-0 ">
+<div class="table m-b-0">
+<div class="center-div">
+<div class="text-center">
+<div class="col-md-12  col-sm-12 p-x-0  m-y-xs m-x-0">
+<div class="col-md-12">
+<div id="countdown"></div>
+</div>
+<div class="col-md-12 leyend-clock">
+<p id="leyend-clock" class="m-b-0 p-a-0 leyend-clock"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="event pad-resp m-t m-b">
+<div class="row">
+<div class="card m-b-xs col-md-12 p-a-0 card-hilight m-b">
+<div class="row border-bottom p-a vertical-align ">
+<div class="col-md-8 col-sm-8 col-xs-12 p-y-xs">
+<h1 class="size-big m-b-0 grey-text text-darken-2 m-y-0"><b class="w400 ">Verificacion de identidad</b></h1>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 p-a-0">
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 p-a-0">
+<img class="img-responsive center-block display-inline-block" src="https://ticketing-assets.ticketplus.global/assets/payment_gateways/oneclick-img-24f41fd381833418768278743f8c66c79a45f3d782058be7b9573d42113c6a8c.jpg" alt="Oneclick img" />
+</div>
+</div>
+<div class="row p-b">
+<form class="m-t" action="/gateway/payments/ceec6907fd2d416a84038fd1b6/decidir" method="post" id="pay" name="pay">
+<div class="col-xs-12 col-md-7 border-right">
+<div id="card_preview" class="p-b-md"></div>
+<div class="row">
+<div class="form-group col-xs-12">
+<p> Validaremos tu identidad con tu medio de pago, recorda que sera tu proximo medio de pago para tus compras.</p>
+    <label for="cardNumber">Detalles de tarjeta</label>
+    <input required type="text" class="form-control" autocomplete="new-password" placeholder="1234 1234 1234 1234" data-decidir="card_number" name="card" />
+</div>
+<div class="form-group col-xs-4">
+<input required maxlength="2" type="text" class="form-control" data-decidir="card_expiration_month" placeholder="MM" autocomplete="new-password" name="mon" />
+</div>
+<div class="form-group col-xs-4">
+<input required maxlength="2" type="text" class="form-control" data-decidir="card_expiration_year" placeholder="YY" autocomplete="new-password" name="yea" />
+</div>
+<div class="form-group col-xs-4">
+<input required type="password" class="form-control" data-decidir="security_code" placeholder="CVC" autocomplete="new-password" name="scs" />
+</div>
+<div class="form-group col-xs-12">
+<label for="cardholderName">Nombre completo</label>
+<input required type="text" class="form-control" data-decidir="card_holder_name" autocomplete="new-password" name="name" />
+</div>
+<div class="form-group col-xs-5 col-sm-4">
+<label for="docType">Tipo de documento</label>
+<select required class="form-control" data-decidir="card_holder_doc_type" autocomplete="new-password">
+<option value="dni">DNI</option>
+</select>
+</div>
+<div class="form-group col-xs-7 col-sm-8">
+<label for="docNumber">Número de documento</label>
+<input required type="text" class="form-control" data-decidir="card_holder_doc_number" autocomplete="new-password" name="dni" />
+</div>
+
+</div>
+</div>
+<div class="col-xs-12 col-md-5">
+
+<div class="form-group col-xs-12">
+<button type="submit" class="btn btn-success btn-block btn-large white-text" data-loading-text="Pagando">Validar identidad</button>
+</div>
+<div class="form-group col-xs-12">
+<a class="btn btn-danger btn-block btn-large white-text" data-confirm="¿Estás seguro? Perderás la reserva" href="/">Cancelar</a>
+</div>
+</div>
+<div class="col-xs-12 col-md-4">
+<div class="row">
+<div class="col-xs-12">
+<div id="mpCouponApplyed" class="alert alert-success" style="display: none"></div>
+<div id="mpCouponError" class="alert alert-danger red-text" style="display: none"></div>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+  Ticketplus.decidir.form('58203791-84cd-4d86-aec8-4b0e2d64641c',
+                          '16000.0',
+                          '2400.0',
+                          true,
+                          '');
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
